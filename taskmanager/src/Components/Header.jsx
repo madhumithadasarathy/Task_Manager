@@ -22,8 +22,10 @@ const Header = () => {
         <div className="text-white dark:text-gray-200 font-bold text-xl">
           Task Manager
         </div>
-        {/* Search Bar (Reduced Size on Small Screens) */}
-        <div className="flex items-center bg-zinc-800 dark:bg-gray-300 rounded-full px-3 py-2 w-2/3 sm:w-1/3 md:w-full max-w-md ml-4">
+        {/* Search Bar */}
+        <div
+          className={`flex items-center bg-zinc-800 dark:bg-gray-300 rounded-full px-3 py-2 w-2/3 sm:w-1/3 md:w-full max-w-md ml-4 transition-all duration-300 ease-in-out focus-within:w-full`}
+        >
           <SearchIcon className="text-gray-400" />
           <input
             type="text"
@@ -31,7 +33,6 @@ const Header = () => {
             className="bg-transparent text-gray-300 dark:text-black placeholder-gray-400 dark:placeholder-gray-600 ml-2 w-full focus:outline-none"
           />
         </div>
-
         {/* Hamburger Icon */}
         <button
           className="md:hidden text-gray-300 p-2 rounded-full hover:bg-zinc-700 dark:hover:bg-gray-400 ml-auto"
